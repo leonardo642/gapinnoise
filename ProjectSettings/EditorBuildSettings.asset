@@ -4,8 +4,5 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes:
-  - enabled: 1
-    path: Packages/com.vrchat.worlds/Samples/UdonExampleScene/UdonExampleScene.unity
-    guid: 4f71908aaae3aac4ebcf83e4abbaea68
+  m_Scenes: []
   m_configObjects: {}
