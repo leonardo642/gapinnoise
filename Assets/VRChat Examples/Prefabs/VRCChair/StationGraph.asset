@@ -17,10 +17,8 @@ MonoBehaviour:
   udonAssembly: ".data_start\r\n\r\n    \r\n    __instance_0: %VRCSDKBaseVRCPlayerApi,
     null\r\n    __message_0: %SystemObject, null\r\n    __format_0: %SystemString,
     null\r\n    __arg0_0: %SystemObject, null\r\n    __instance_1: %VRCSDKBaseVRCPlayerApi,
-    null\r\n    onStationEnteredPlayer: %VRCSDKBaseVRCPlayerApi, null\r\n    __message_1:
-    %SystemObject, null\r\n    __format_1: %SystemString, null\r\n    __arg0_1: %SystemObject,
-    null\r\n    __instance_2: %VRCSDKBaseVRCPlayerApi, null\r\n    onStationExitedPlayer:
-    %VRCSDKBaseVRCPlayerApi, null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n   
+    null\r\n    onStationEnteredPlayer: %VRCSDKBaseVRCPlayerApi, null\r\n    __instance_2:
+    %VRCSDKBaseVRCPlayerApi, null\r\n    __immobile_0: %SystemBoolean, null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n   
     .export _interact\r\n    \r\n    _interact:\r\n    \r\n        PUSH, __instance_0\r\n       
     EXTERN, \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n       
     PUSH, __instance_0\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__UseAttachedStation__SystemVoid\"\r\n       
@@ -31,11 +29,8 @@ MonoBehaviour:
     PUSH, __arg0_0\r\n        PUSH, __message_0\r\n        EXTERN, \"SystemString.__Format__SystemString_SystemObject__SystemString\"\r\n       
     PUSH, __message_0\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n       
     JUMP, 0xFFFFFFFC\r\n    \r\n    .export _onStationExited\r\n    \r\n    _onStationExited:\r\n   
-    \r\n        PUSH, onStationExitedPlayer\r\n        PUSH, __instance_2\r\n       
-    COPY\r\n        PUSH, __instance_2\r\n        PUSH, __arg0_1\r\n        EXTERN,
-    \"VRCSDKBaseVRCPlayerApi.__get_displayName__SystemString\"\r\n        PUSH, __format_1\r\n       
-    PUSH, __arg0_1\r\n        PUSH, __message_1\r\n        EXTERN, \"SystemString.__Format__SystemString_SystemObject__SystemString\"\r\n       
-    PUSH, __message_1\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n       
+    \r\n        PUSH, __instance_2\r\n        EXTERN, \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n       
+    PUSH, __instance_2\r\n        PUSH, __immobile_0\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__Immobilize__SystemBoolean__SystemVoid\"\r\n       
     JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
   assemblyError: 
   graphData:
@@ -138,7 +133,26 @@ MonoBehaviour:
       position: {x: 1680, y: 260}
       nodeUIDs: []
       flowUIDs:
-      - f2fd1aff-eac6-4bad-b19b-ac78d332c50c
+      - 52af9d74-f718-4f8b-9fff-485dc2a04353
+      nodeValues: []
+    - fullName: VRCSDKBaseVRCPlayerApi.__Immobilize__SystemBoolean__SystemVoid
+      uid: 52af9d74-f718-4f8b-9fff-485dc2a04353
+      position: {x: 1935.6777, y: 450.9325}
+      nodeUIDs:
+      - 653feeab-cfa0-445b-876c-ee7dca9d0571|0
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
+    - fullName: VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi
+      uid: 653feeab-cfa0-445b-876c-ee7dca9d0571
+      position: {x: 1693.2574, y: 462.74}
+      nodeUIDs: []
+      flowUIDs: []
       nodeValues: []
     updateOrder: 0
   graphElementData:
@@ -152,7 +166,7 @@ MonoBehaviour:
       Player Name When They Enter","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
   - type: 2
     uid: b3530459-83f3-44f3-90de-f90d9b0932d2
-    jsonData: '{"uid":"b3530459-83f3-44f3-90de-f90d9b0932d2","layout":{"serializedVersion":"2","x":1660.0,"y":180.0,"width":1081.0,"height":324.0},"containedElements":["778c57e2-05e0-41ea-b330-113a1be1ef31","f2fd1aff-eac6-4bad-b19b-ac78d332c50c","8909ba7d-ff67-48cc-be25-e86ec7011cc6","9707b710-a947-41ff-b26f-8a582d68a6eb"],"title":"Log
+    jsonData: '{"uid":"b3530459-83f3-44f3-90de-f90d9b0932d2","layout":{"serializedVersion":"2","x":1655.0001220703125,"y":181.00001525878907,"width":1041.0,"height":426.0},"containedElements":["778c57e2-05e0-41ea-b330-113a1be1ef31","f2fd1aff-eac6-4bad-b19b-ac78d332c50c","8909ba7d-ff67-48cc-be25-e86ec7011cc6","9707b710-a947-41ff-b26f-8a582d68a6eb","52af9d74-f718-4f8b-9fff-485dc2a04353","653feeab-cfa0-445b-876c-ee7dca9d0571"],"title":"Log
       Player Name When They Exit","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
   - type: 5
     uid: 5d0f4cc4-6854-454f-bb77-8e1bb8842672

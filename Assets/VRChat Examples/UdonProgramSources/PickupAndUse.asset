@@ -119,12 +119,16 @@ MonoBehaviour:
       nodeUIDs:
       - 
       - 22a5bc58-c202-4b10-a0b7-f0eb94b2df4e|0
+      - 
       flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|f75153ec-462f-41df-835e-046a120001cf
       - unityObjectValue: {fileID: 0}
         stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
     - fullName: Variable_UnityEngineMaterial
       uid: f75153ec-462f-41df-835e-046a120001cf
       position: {x: -696, y: -552}

@@ -95,8 +95,7 @@ MonoBehaviour:
       flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}
-        stringValue: VRC.SDKBase.VRCPlayerApi[], VRCSDKBase, Version=0.0.0.0, Culture=neutral,
-          PublicKeyToken=null|{}
+        stringValue: 
     - fullName: VRCSDKBaseVRCPlayerApiArray.__Get__SystemInt32__VRCSDKBaseVRCPlayerApi
       uid: 2dc019ef-4a5e-4521-8189-7952e2cac155
       position: {x: 1550, y: -235}
@@ -162,6 +161,7 @@ MonoBehaviour:
       nodeUIDs:
       - 
       - 345d65e7-6553-4385-850e-de80f4ad5c90|0
+      - 
       flowUIDs:
       - 
       nodeValues:
@@ -169,6 +169,9 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|6cb5636c-3d41-4c90-ae8e-a29079067126
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|6cb5636c-3d41-4c90-ae8e-a29079067126
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
     - fullName: Event_Start
       uid: e9a17231-573a-4522-b1ad-00af4e592c3d
       position: {x: 1165, y: -600}
