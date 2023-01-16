@@ -330,7 +330,7 @@ MonoBehaviour:
       nodeValues: []
     - fullName: Variable_UnityEngineVector3
       uid: 570475e3-c3b2-4cfa-bbf7-2f4c75c308fc
-      position: {x: 0, y: 0}
+      position: {x: 80, y: 290}
       nodeUIDs:
       - 
       - 
@@ -357,12 +357,16 @@ MonoBehaviour:
       nodeUIDs:
       - 
       - e7316895-c7c8-4844-be11-0b9390d15c38|0
+      - 
       flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|570475e3-c3b2-4cfa-bbf7-2f4c75c308fc
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|originalPosition
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
     - fullName: Get_Variable
       uid: be393060-cb57-4223-acc2-4d6c8e9ab58f
       position: {x: -580, y: -190}
