@@ -16,6 +16,38 @@ Shader "_lil/[Optional] lilToonFakeShadow"
         // Encryption
         [lilToggle]     _IgnoreEncryption           ("Ignore Encryption", Int) = 0
                         _Keys                       ("Keys", Vector) = (0,0,0,0)
+                        _BitKey0                    ("", Float) = 0
+                        _BitKey1                    ("", Float) = 0
+                        _BitKey2                    ("", Float) = 0
+                        _BitKey3                    ("", Float) = 0
+                        _BitKey4                    ("", Float) = 0
+                        _BitKey5                    ("", Float) = 0
+                        _BitKey6                    ("", Float) = 0
+                        _BitKey7                    ("", Float) = 0
+                        _BitKey8                    ("", Float) = 0
+                        _BitKey9                    ("", Float) = 0
+                        _BitKey10                   ("", Float) = 0
+                        _BitKey11                   ("", Float) = 0
+                        _BitKey12                   ("", Float) = 0
+                        _BitKey13                   ("", Float) = 0
+                        _BitKey14                   ("", Float) = 0
+                        _BitKey15                   ("", Float) = 0
+                        _BitKey16                   ("", Float) = 0
+                        _BitKey17                   ("", Float) = 0
+                        _BitKey18                   ("", Float) = 0
+                        _BitKey19                   ("", Float) = 0
+                        _BitKey20                   ("", Float) = 0
+                        _BitKey21                   ("", Float) = 0
+                        _BitKey22                   ("", Float) = 0
+                        _BitKey23                   ("", Float) = 0
+                        _BitKey24                   ("", Float) = 0
+                        _BitKey25                   ("", Float) = 0
+                        _BitKey26                   ("", Float) = 0
+                        _BitKey27                   ("", Float) = 0
+                        _BitKey28                   ("", Float) = 0
+                        _BitKey29                   ("", Float) = 0
+                        _BitKey30                   ("", Float) = 0
+                        _BitKey31                   ("", Float) = 0
 
         //----------------------------------------------------------------------------------------------------------------------
         // Advanced
@@ -53,7 +85,7 @@ Shader "_lil/[Optional] lilToonFakeShadow"
         [HideInInspector]                               _BaseColor          ("Color", Color) = (1,1,1,1)
         [HideInInspector]                               _BaseMap            ("Texture", 2D) = "white" {}
         [HideInInspector]                               _BaseColorMap       ("Texture", 2D) = "white" {}
-        [HideInInspector]                               _lilToonVersion     ("Version", Int) = 32
+        [HideInInspector]                               _lilToonVersion     ("Version", Int) = 33
     }
 
     SubShader
@@ -156,8 +188,9 @@ Shader "_lil/[Optional] lilToonFakeShadow"
             #define LIL_FEATURE_FurVectorTex
             #define LIL_OPTIMIZE_APPLY_SHADOW_FA
             #define LIL_OPTIMIZE_USE_FORWARDADD
+            #define LIL_OPTIMIZE_USE_FORWARDADD_SHADOW
             #define LIL_OPTIMIZE_USE_VERTEXLIGHT
-            #pragma skip_variants LIGHTMAP_ON DYNAMICLIGHTMAP_ON LIGHTMAP_SHADOW_MIXING SHADOWS_SHADOWMASK DIRLIGHTMAP_COMBINED _MIXED_LIGHTING_SUBTRACTIVE
+            #define LIL_OPTIMIZE_USE_LIGHTMAP
             #pragma target 3.5
             #pragma fragmentoption ARB_precision_hint_fastest
             #define LIL_FAKESHADOW
