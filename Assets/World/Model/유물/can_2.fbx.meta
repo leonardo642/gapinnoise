@@ -1,69 +1,9 @@
 fileFormatVersion: 2
-guid: 33693932cf594624cb91466a9ad2230c
+guid: 828d9e55c6f83104f923045969c6831b
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: 02
-    second: {fileID: 2800000, guid: 4865a7a40ebdc4e4caa4ee3a8c6d08e1, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: 03
-    second: {fileID: 2800000, guid: e68f40447edc3314d851acba5904c8ba, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: 33
-    second: {fileID: 2800000, guid: 9f24c00777f09a143b0d5a383ee7386e, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: 45
-    second: {fileID: 2800000, guid: 31159b9a5a30bb842be261e730c721ac, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Technics
-    second: {fileID: 2800000, guid: f4d986acfbb7f654a906aee6366bc1b3, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: arm
-    second: {fileID: 2800000, guid: e050b1dbb3a65b946af1e82ad4e40fcc, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: d-top
-    second: {fileID: 2800000, guid: d519c73003cac004d994d11fa2f3339f, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: ptch
-    second: {fileID: 2800000, guid: 0c42c7ffe2ed09d409d888011667de8b, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: pwr
-    second: {fileID: 2800000, guid: d0432d60a4a75d54289ff7bba7552f39, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: start st
-    second: {fileID: 2800000, guid: e8f4b4b671b42f94181b34a1fc5e1a43, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: untitled
-    second: {fileID: 2800000, guid: 063558d97cc838047a52ec2a938976ce, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: vinyl-re
-    second: {fileID: 2800000, guid: ab07335982b62204e9b48364d223166c, type: 3}
+  externalObjects: {}
   materials:
     materialImportMode: 1
     materialName: 0
