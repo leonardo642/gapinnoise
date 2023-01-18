@@ -507,7 +507,7 @@ Material:
     - _ParallaxOffset: 0.5
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Reflectance: 0.716
+    - _Reflectance: 1
     - _ReflectionApplyTransparency: 1
     - _ReflectionBlendMode: 1
     - _ReflectionCubeEnableLighting: 1
@@ -554,7 +554,7 @@ Material:
     - _ShadowStrength: 1
     - _ShadowStrengthMaskLOD: 0
     - _ShiftBackfaceUV: 0
-    - _Smoothness: 0.5
+    - _Smoothness: 0.654
     - _SmoothnessTextureChannel: 0
     - _SpecularBlur: 0
     - _SpecularBorder: 0.5
