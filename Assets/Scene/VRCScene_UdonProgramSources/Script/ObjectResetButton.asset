@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c333ccfdd0cbdbc4ca30cef2dd6e6b9b, type: 3}
-  m_Name: ArrayTest
+  m_Name: ObjectResetButton
   m_EditorClassIdentifier: 
-  serializedUdonProgramAsset: {fileID: 11400000, guid: ad6f211ec238254449a29cc1e2f22e42,
+  serializedUdonProgramAsset: {fileID: 11400000, guid: efa21716d4767cd41af1fa950ccb24ef,
     type: 2}
   udonAssembly: 
   assemblyError: 
-  sourceCsScript: {fileID: 11500000, guid: d59b8f86f10ce784793e2b25ae094ed8, type: 3}
+  sourceCsScript: {fileID: 11500000, guid: 2925367d6262c4f42a4bbf8bd2c2bebc, type: 3}
   behaviourSyncMode: 0
   behaviourIDHeapVarName: __refl_const_intnl_udonTypeID
   compileErrors: []
-  hasInteractEvent: 0
+  hasInteractEvent: 1
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
