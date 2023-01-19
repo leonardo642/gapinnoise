@@ -47,7 +47,7 @@ MonoBehaviour:
       position: {x: 300, y: 440}
       nodeUIDs: []
       flowUIDs:
-      - 787668e1-41fe-4901-ab06-54bc47315fe3
+      - e35f0af5-2b22-493d-b97b-a426e14e86e6
       nodeValues: []
     - fullName: Event_OnPlayerTriggerExit
       uid: 5593ff8f-3d3d-4c48-97dd-492a382c9560
@@ -58,7 +58,7 @@ MonoBehaviour:
       nodeValues: []
     - fullName: Variable_UnityEngineUIText
       uid: b8929c6f-0571-49ff-989b-e6fbe4357275
-      position: {x: -890, y: -505}
+      position: {x: -1760, y: -1400}
       nodeUIDs:
       - 
       - 
@@ -79,49 +79,6 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|False
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
-    - fullName: Get_Variable
-      uid: 8b074d0a-01ea-4474-9f8b-09de186c0f8e
-      position: {x: 1030, y: 410}
-      nodeUIDs:
-      - 
-      flowUIDs: []
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|b8929c6f-0571-49ff-989b-e6fbe4357275
-    - fullName: SystemString.__Format__SystemString_SystemObject__SystemString
-      uid: 0b01c504-8474-4d13-907c-813e3b72ef20
-      position: {x: 900, y: 600}
-      nodeUIDs:
-      - 
-      - 99ff63d8-ad74-4186-9bb0-2b57eadc88b1|0
-      flowUIDs: []
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|{0}
-          Entered
-      - unityObjectValue: {fileID: 0}
-        stringValue: 
-    - fullName: VRCSDKBaseVRCPlayerApi.__get_displayName__SystemString
-      uid: 99ff63d8-ad74-4186-9bb0-2b57eadc88b1
-      position: {x: 580, y: 510}
-      nodeUIDs:
-      - c53d6635-48fc-45c4-a945-2fc99581bdf2|0
-      flowUIDs: []
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: 
-    - fullName: UnityEngineUIText.__set_text__SystemString__SystemVoid
-      uid: 787668e1-41fe-4901-ab06-54bc47315fe3
-      position: {x: 1200, y: 440}
-      nodeUIDs:
-      - 8b074d0a-01ea-4474-9f8b-09de186c0f8e|0
-      - 0b01c504-8474-4d13-907c-813e3b72ef20|0
-      flowUIDs: []
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: 
-      - unityObjectValue: {fileID: 0}
-        stringValue: 
     - fullName: VRCSDKBaseVRCPlayerApi.__get_displayName__SystemString
       uid: dc61f9c8-e8e9-4564-a2b7-fb44fab8e9dd
       position: {x: 560, y: 900}
@@ -159,6 +116,49 @@ MonoBehaviour:
     - fullName: Get_Variable
       uid: da1f0c30-9d52-4d81-8f3c-31bf11f28973
       position: {x: 1010, y: 800}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|b8929c6f-0571-49ff-989b-e6fbe4357275
+    - fullName: VRCSDKBaseVRCPlayerApi.__get_displayName__SystemString
+      uid: e39a157e-8fdc-45b2-8018-9358163dc003
+      position: {x: 585.70575, y: 528.48114}
+      nodeUIDs:
+      - c53d6635-48fc-45c4-a945-2fc99581bdf2|0
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: SystemString.__Format__SystemString_SystemObject__SystemString
+      uid: c5c1d24e-a220-466e-9a28-cfce69a34a91
+      position: {x: 905.70575, y: 618.48114}
+      nodeUIDs:
+      - 
+      - e39a157e-8fdc-45b2-8018-9358163dc003
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|{0}
+          Exited
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: UnityEngineUIText.__set_text__SystemString__SystemVoid
+      uid: e35f0af5-2b22-493d-b97b-a426e14e86e6
+      position: {x: 1204.4791, y: 442.79123}
+      nodeUIDs:
+      - f5d441b4-edb7-4b47-99b8-b64b6976d163
+      - c5c1d24e-a220-466e-9a28-cfce69a34a91
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: Get_Variable
+      uid: f5d441b4-edb7-4b47-99b8-b64b6976d163
+      position: {x: 1010.14514, y: 393.01984}
       nodeUIDs:
       - 
       flowUIDs: []

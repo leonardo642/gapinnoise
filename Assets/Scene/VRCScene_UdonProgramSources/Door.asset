@@ -28,17 +28,10 @@ MonoBehaviour:
     null\r\n    __value_1: %SystemBoolean, null\r\n    __instance_7: %UnityEngineAnimatorArray,
     null\r\n    __Int32_1: %SystemInt32, null\r\n    __start_1: %SystemInt32, null\r\n   
     __end_1: %SystemInt32, null\r\n    __step_1: %SystemInt32, null\r\n    __instance_5:
-    %UnityEngineAnimatorArray, null\r\n    __Boolean_2: %SystemBoolean, null\r\n   
-    __instance_8: %VRCSDKBaseVRCPlayerApi, null\r\n    __index_2: %SystemInt32, null\r\n   
-    __condition_2: %SystemBoolean, null\r\n    __instance_A: %UnityEngineAnimator,
-    null\r\n    __name_2: %SystemString, null\r\n    __value_2: %SystemBoolean, null\r\n   
-    __instance_B: %UnityEngineAnimatorArray, null\r\n    __Int32_2: %SystemInt32,
-    null\r\n    __start_2: %SystemInt32, null\r\n    __end_2: %SystemInt32, null\r\n   
-    __step_2: %SystemInt32, null\r\n    __instance_9: %UnityEngineAnimatorArray,
-    null\r\n    Open: %SystemBoolean, null\r\n    doors: %UnityEngineAnimatorArray,
-    null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n    .export Open\r\n    \r\n   
-    Open:\r\n    \r\n        PUSH, Open\r\n        PUSH, Open\r\n        EXTERN,
-    \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n       
+    %UnityEngineAnimatorArray, null\r\n    Open: %SystemBoolean, null\r\n    doors:
+    %UnityEngineAnimatorArray, null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n   
+    .export Open\r\n    \r\n    Open:\r\n    \r\n        PUSH, Open\r\n        PUSH,
+    Open\r\n        EXTERN, \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n       
     PUSH, __instance_0\r\n        PUSH, __eventName_0\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n       
     JUMP, 0xFFFFFFFC\r\n    \r\n    .export OpenDoors\r\n    \r\n    OpenDoors:\r\n   
     \r\n        PUSH, doors\r\n        PUSH, __instance_1\r\n        COPY\r\n       
@@ -73,24 +66,6 @@ MonoBehaviour:
     PUSH, __index_1\r\n        PUSH, __step_1\r\n        PUSH, __index_1\r\n       
     EXTERN, \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n       
     JUMP, 0x000001CC\r\n        JUMP, 0x000002A8\r\n        JUMP, 0xFFFFFFFC\r\n   
-    \r\n    .export _start\r\n    \r\n    _start:\r\n    \r\n        PUSH, __instance_8\r\n       
-    EXTERN, \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n       
-    PUSH, __instance_8\r\n        PUSH, __Boolean_2\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__get_isLocal__SystemBoolean\"\r\n       
-    PUSH, __Boolean_2\r\n        JUMP_IF_FALSE, 0x00000404\r\n        PUSH, doors\r\n       
-    PUSH, __instance_9\r\n        COPY\r\n        PUSH, __instance_9\r\n        PUSH,
-    __end_2\r\n        EXTERN, \"UnityEngineAnimatorArray.__get_Length__SystemInt32\"\r\n       
-    PUSH, __start_2\r\n        PUSH, __index_2\r\n        COPY\r\n        PUSH, __index_2\r\n       
-    PUSH, __end_2\r\n        PUSH, __condition_2\r\n        EXTERN, \"SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n       
-    PUSH, __condition_2\r\n        JUMP_IF_FALSE, 0x000003FC\r\n        PUSH, doors\r\n       
-    PUSH, __instance_B\r\n        COPY\r\n        PUSH, doors\r\n        PUSH, __instance_9\r\n       
-    COPY\r\n        PUSH, __index_2\r\n        PUSH, __Int32_2\r\n        COPY\r\n       
-    PUSH, __instance_B\r\n        PUSH, __Int32_2\r\n        PUSH, __instance_A\r\n       
-    EXTERN, \"UnityEngineAnimatorArray.__Get__SystemInt32__UnityEngineAnimator\"\r\n       
-    PUSH, __instance_A\r\n        PUSH, __name_2\r\n        PUSH, Open\r\n       
-    EXTERN, \"UnityEngineAnimator.__SetBool__SystemString_SystemBoolean__SystemVoid\"\r\n       
-    PUSH, __index_2\r\n        PUSH, __step_2\r\n        PUSH, __index_2\r\n       
-    EXTERN, \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n       
-    JUMP, 0x00000328\r\n        JUMP, 0x00000404\r\n        JUMP, 0xFFFFFFFC\r\n   
     \r\n\r\n.code_end\r\n"
   assemblyError: 
   graphData:
@@ -99,7 +74,7 @@ MonoBehaviour:
     nodes:
     - fullName: Variable_SystemBoolean
       uid: 66b3aa93-644b-49c9-be5d-a2a7697de17b
-      position: {x: -2637.221, y: 118.54956}
+      position: {x: -3945.0845, y: -601.05225}
       nodeUIDs:
       - 
       - 
@@ -149,7 +124,7 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|False
     - fullName: Get_Variable
       uid: 7be4dbe8-8213-4cbe-a73b-078dd3ef411f
-      position: {x: 1032.0005, y: -145.13638}
+      position: {x: 972.4875, y: -113.259995}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -326,7 +301,7 @@ MonoBehaviour:
   graphElementData:
   - type: 2
     uid: 438a76f6-d1e7-43c3-99e9-ad7dbff43756
-    jsonData: '{"uid":"438a76f6-d1e7-43c3-99e9-ad7dbff43756","layout":{"serializedVersion":"2","x":629.0000610351563,"y":-455.0,"width":954.0,"height":418.0},"containedElements":["da8a79c0-bf01-46e9-a481-45e47d6a5f6b","f4d8c0e8-04cf-4a14-a354-2e2608722138","6765d7ae-8ad4-4016-8dd7-d30e143a783a","15cf9307-15d9-4d58-a8eb-a265d97d8c7d","fad82425-7847-4460-bf4a-914915379e2d","feeb07a3-7854-4121-8cda-f02ddc13d321","7be4dbe8-8213-4cbe-a73b-078dd3ef411f","2405cfb8-99ad-427c-b289-c1c4d429f052","45276041-0781-40f7-83f4-fc676133d3ee"],"title":"Open
+    jsonData: '{"uid":"438a76f6-d1e7-43c3-99e9-ad7dbff43756","layout":{"serializedVersion":"2","x":629.0,"y":-454.0000305175781,"width":954.0,"height":449.0},"containedElements":["da8a79c0-bf01-46e9-a481-45e47d6a5f6b","f4d8c0e8-04cf-4a14-a354-2e2608722138","6765d7ae-8ad4-4016-8dd7-d30e143a783a","15cf9307-15d9-4d58-a8eb-a265d97d8c7d","fad82425-7847-4460-bf4a-914915379e2d","feeb07a3-7854-4121-8cda-f02ddc13d321","7be4dbe8-8213-4cbe-a73b-078dd3ef411f","2405cfb8-99ad-427c-b289-c1c4d429f052","45276041-0781-40f7-83f4-fc676133d3ee"],"title":"Open
       And Close","layer":-1,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":1.0}}'
   version: 1.0.0
   showAssembly: 0

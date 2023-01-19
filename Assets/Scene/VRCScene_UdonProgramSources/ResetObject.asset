@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f11136daadff0b44ac2278a314682ab, type: 3}
   m_Name: ResetObject
   m_EditorClassIdentifier: 
-  serializedUdonProgramAsset: {fileID: 11400000, guid: 7f27235897e486242bdd0851a5dc0463,
+  serializedUdonProgramAsset: {fileID: 11400000, guid: d55fcfa4e6915784d89a1d3a5b2c6cbd,
     type: 2}
   udonAssembly: ".data_start\r\n\r\n    \r\n    __instance_0: %UnityEngineTransform,
     this\r\n    __instance_1: %UnityEngineTransform, this\r\n    __instance_2: %UnityEngineTransform,
