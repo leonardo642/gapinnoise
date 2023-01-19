@@ -17,49 +17,56 @@ MonoBehaviour:
   udonAssembly: ".data_start\r\n\r\n    .export jumpImpulse\r\n    .export walkSpeed\r\n   
     .export RunSpeed\r\n    .export StrafeSpeed\r\n    \r\n    __instance_0: %VRCSDKBaseVRCPlayerApi,
     null\r\n    onPlayerTriggerEnterPlayer: %VRCSDKBaseVRCPlayerApi, null\r\n   
-    __instance_1: %VRCSDKBaseVRCPlayerApi, null\r\n    __impulse_0: %SystemSingle,
-    null\r\n    __instance_2: %VRCSDKBaseVRCPlayerApi, null\r\n    __speed_0: %SystemSingle,
-    null\r\n    __instance_3: %VRCSDKBaseVRCPlayerApi, null\r\n    __speed_1: %SystemSingle,
-    null\r\n    __instance_4: %VRCSDKBaseVRCPlayerApi, null\r\n    __speed_2: %SystemSingle,
-    null\r\n    __instance_5: %VRCSDKBaseVRCPlayerApi, null\r\n    __instance_6:
-    %VRCSDKBaseVRCPlayerApi, null\r\n    __instance_7: %VRCSDKBaseVRCPlayerApi, null\r\n   
-    __instance_8: %VRCSDKBaseVRCPlayerApi, null\r\n    __impulse_1: %SystemSingle,
-    null\r\n    onPlayerTriggerExitPlayer: %VRCSDKBaseVRCPlayerApi, null\r\n    __message_0:
-    %SystemObject, null\r\n    __instance_9: %VRCSDKBaseVRCPlayerApi, null\r\n   
-    __speed_3: %SystemSingle, null\r\n    __instance_A: %VRCSDKBaseVRCPlayerApi,
-    null\r\n    __speed_4: %SystemSingle, null\r\n    __instance_B: %VRCSDKBaseVRCPlayerApi,
-    null\r\n    __speed_5: %SystemSingle, null\r\n    jumpImpulse: %SystemSingle,
-    null\r\n    walkSpeed: %SystemSingle, null\r\n    RunSpeed: %SystemSingle, null\r\n   
-    StrafeSpeed: %SystemSingle, null\r\n    OriginalJumpImpulse: %SystemSingle, null\r\n   
-    OriginalwalkSpeed: %SystemSingle, null\r\n    OriginalRunSpeed: %SystemSingle,
-    null\r\n    OriginalStrafeSpeed: %SystemSingle, null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n   
-    .export _onPlayerTriggerEnter\r\n    \r\n    _onPlayerTriggerEnter:\r\n    \r\n       
-    PUSH, onPlayerTriggerEnterPlayer\r\n        PUSH, __instance_0\r\n        COPY\r\n       
-    PUSH, __instance_0\r\n        PUSH, OriginalJumpImpulse\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__GetJumpImpulse__SystemSingle\"\r\n       
+    __instance_1: %VRCSDKBaseVRCPlayerApi, null\r\n    __instance_2: %VRCSDKBaseVRCPlayerApi,
+    null\r\n    __instance_3: %VRCSDKBaseVRCPlayerApi, null\r\n    __instance_4:
+    %VRCSDKBaseVRCPlayerApi, null\r\n    __impulse_0: %SystemSingle, null\r\n   
+    __message_0: %SystemObject, null\r\n    __instance_5: %VRCSDKBaseVRCPlayerApi,
+    null\r\n    __speed_0: %SystemSingle, null\r\n    __message_1: %SystemObject,
+    null\r\n    __instance_6: %VRCSDKBaseVRCPlayerApi, null\r\n    __speed_1: %SystemSingle,
+    null\r\n    __message_2: %SystemObject, null\r\n    __instance_7: %VRCSDKBaseVRCPlayerApi,
+    null\r\n    __speed_2: %SystemSingle, null\r\n    __message_3: %SystemObject,
+    null\r\n    __instance_8: %VRCSDKBaseVRCPlayerApi, null\r\n    __impulse_1: %SystemSingle,
+    null\r\n    onPlayerTriggerExitPlayer: %VRCSDKBaseVRCPlayerApi, null\r\n    __instance_9:
+    %VRCSDKBaseVRCPlayerApi, null\r\n    __speed_3: %SystemSingle, null\r\n    __instance_A:
+    %VRCSDKBaseVRCPlayerApi, null\r\n    __speed_4: %SystemSingle, null\r\n    __instance_B:
+    %VRCSDKBaseVRCPlayerApi, null\r\n    __speed_5: %SystemSingle, null\r\n    __message_4:
+    %SystemObject, null\r\n    jumpImpulse: %SystemSingle, null\r\n    walkSpeed:
+    %SystemSingle, null\r\n    RunSpeed: %SystemSingle, null\r\n    StrafeSpeed:
+    %SystemSingle, null\r\n    OriginalJumpImpulse: %SystemSingle, null\r\n    OriginalwalkSpeed:
+    %SystemSingle, null\r\n    OriginalRunSpeed: %SystemSingle, null\r\n    OriginalStrafeSpeed:
+    %SystemSingle, null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n    .export _onPlayerTriggerEnter\r\n   
+    \r\n    _onPlayerTriggerEnter:\r\n    \r\n        PUSH, onPlayerTriggerEnterPlayer\r\n       
+    PUSH, __instance_0\r\n        COPY\r\n        PUSH, __instance_0\r\n        PUSH,
+    OriginalJumpImpulse\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__GetJumpImpulse__SystemSingle\"\r\n       
     PUSH, onPlayerTriggerEnterPlayer\r\n        PUSH, __instance_1\r\n        COPY\r\n       
-    PUSH, __instance_1\r\n        PUSH, jumpImpulse\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__SetJumpImpulse__SystemSingle__SystemVoid\"\r\n       
-    PUSH, __instance_2\r\n        PUSH, walkSpeed\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__SetWalkSpeed__SystemSingle__SystemVoid\"\r\n       
+    PUSH, __instance_1\r\n        PUSH, OriginalwalkSpeed\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__GetWalkSpeed__SystemSingle\"\r\n       
+    PUSH, onPlayerTriggerEnterPlayer\r\n        PUSH, __instance_2\r\n        COPY\r\n       
+    PUSH, __instance_2\r\n        PUSH, OriginalRunSpeed\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__GetRunSpeed__SystemSingle\"\r\n       
     PUSH, onPlayerTriggerEnterPlayer\r\n        PUSH, __instance_3\r\n        COPY\r\n       
-    PUSH, __instance_3\r\n        PUSH, RunSpeed\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__SetRunSpeed__SystemSingle__SystemVoid\"\r\n       
+    PUSH, __instance_3\r\n        PUSH, OriginalStrafeSpeed\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__GetStrafeSpeed__SystemSingle\"\r\n       
     PUSH, onPlayerTriggerEnterPlayer\r\n        PUSH, __instance_4\r\n        COPY\r\n       
-    PUSH, __instance_4\r\n        PUSH, StrafeSpeed\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__SetStrafeSpeed__SystemSingle__SystemVoid\"\r\n       
+    PUSH, __instance_4\r\n        PUSH, jumpImpulse\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__SetJumpImpulse__SystemSingle__SystemVoid\"\r\n       
+    PUSH, OriginalJumpImpulse\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n       
     PUSH, onPlayerTriggerEnterPlayer\r\n        PUSH, __instance_5\r\n        COPY\r\n       
-    PUSH, __instance_5\r\n        PUSH, OriginalwalkSpeed\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__GetWalkSpeed__SystemSingle\"\r\n       
+    PUSH, __instance_5\r\n        PUSH, walkSpeed\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__SetWalkSpeed__SystemSingle__SystemVoid\"\r\n       
+    PUSH, OriginalwalkSpeed\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n       
     PUSH, onPlayerTriggerEnterPlayer\r\n        PUSH, __instance_6\r\n        COPY\r\n       
-    PUSH, __instance_6\r\n        PUSH, OriginalRunSpeed\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__GetRunSpeed__SystemSingle\"\r\n       
+    PUSH, __instance_6\r\n        PUSH, RunSpeed\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__SetRunSpeed__SystemSingle__SystemVoid\"\r\n       
+    PUSH, OriginalRunSpeed\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n       
     PUSH, onPlayerTriggerEnterPlayer\r\n        PUSH, __instance_7\r\n        COPY\r\n       
-    PUSH, __instance_7\r\n        PUSH, OriginalStrafeSpeed\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__GetStrafeSpeed__SystemSingle\"\r\n       
+    PUSH, __instance_7\r\n        PUSH, StrafeSpeed\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__SetStrafeSpeed__SystemSingle__SystemVoid\"\r\n       
+    PUSH, OriginalStrafeSpeed\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n       
     JUMP, 0xFFFFFFFC\r\n    \r\n    .export _onPlayerTriggerExit\r\n    \r\n    _onPlayerTriggerExit:\r\n   
     \r\n        PUSH, onPlayerTriggerExitPlayer\r\n        PUSH, __instance_8\r\n       
     COPY\r\n        PUSH, __instance_8\r\n        PUSH, OriginalJumpImpulse\r\n       
     EXTERN, \"VRCSDKBaseVRCPlayerApi.__SetJumpImpulse__SystemSingle__SystemVoid\"\r\n       
-    PUSH, __message_0\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n       
     PUSH, onPlayerTriggerExitPlayer\r\n        PUSH, __instance_9\r\n        COPY\r\n       
     PUSH, __instance_9\r\n        PUSH, OriginalwalkSpeed\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__SetWalkSpeed__SystemSingle__SystemVoid\"\r\n       
     PUSH, onPlayerTriggerExitPlayer\r\n        PUSH, __instance_A\r\n        COPY\r\n       
     PUSH, __instance_A\r\n        PUSH, OriginalRunSpeed\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__SetRunSpeed__SystemSingle__SystemVoid\"\r\n       
     PUSH, onPlayerTriggerExitPlayer\r\n        PUSH, __instance_B\r\n        COPY\r\n       
     PUSH, __instance_B\r\n        PUSH, OriginalStrafeSpeed\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__SetStrafeSpeed__SystemSingle__SystemVoid\"\r\n       
+    PUSH, OriginalJumpImpulse\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n       
     JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
   assemblyError: 
   graphData:
@@ -208,7 +215,8 @@ MonoBehaviour:
       nodeUIDs:
       - 52ea3026-eeb7-4ded-af42-8621a6a057da|0
       - 32d16d49-b8fb-4087-96b0-254544b07740|0
-      flowUIDs: []
+      flowUIDs:
+      - 75a2b452-e769-4061-93c5-0b456b44ff54
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: 
@@ -218,9 +226,10 @@ MonoBehaviour:
       uid: b118cf95-1c6c-4945-8ae3-31a0b10a26cd
       position: {x: 614.9273, y: -213.48204}
       nodeUIDs:
-      - 
+      - 52ea3026-eeb7-4ded-af42-8621a6a057da|0
       - c1b8ca40-ae8f-4315-8200-ad253b1c4577|0
-      flowUIDs: []
+      flowUIDs:
+      - eff2a9ea-8d33-4fb8-8c60-4e0f19570707
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: 
@@ -232,7 +241,8 @@ MonoBehaviour:
       nodeUIDs:
       - 52ea3026-eeb7-4ded-af42-8621a6a057da|0
       - 506fc89c-1364-4e76-a2f7-ebbb9c14efb2|0
-      flowUIDs: []
+      flowUIDs:
+      - 2a647d37-0a3a-4b18-8138-daf5b89f894b
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: 
@@ -244,7 +254,8 @@ MonoBehaviour:
       nodeUIDs:
       - 52ea3026-eeb7-4ded-af42-8621a6a057da|0
       - bdee084f-040b-4824-bb0b-3cbe18d99819|0
-      flowUIDs: []
+      flowUIDs:
+      - 95b73780-74a1-40d8-baec-36de95c56e63
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: 
@@ -252,7 +263,7 @@ MonoBehaviour:
         stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
     - fullName: Variable_SystemSingle
       uid: a54db3a3-7e23-4000-8453-ef55a3da19bf
-      position: {x: 0, y: 0}
+      position: {x: -3679.0535, y: 229.02728}
       nodeUIDs:
       - 
       - 
@@ -386,7 +397,7 @@ MonoBehaviour:
       - 08f0a08f-4204-4a85-8c36-fa643f94d239|0
       - 
       flowUIDs:
-      - 96b7b8a2-0330-49c2-9590-f87c3144d26b
+      - 
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|a54db3a3-7e23-4000-8453-ef55a3da19bf
@@ -434,7 +445,8 @@ MonoBehaviour:
       - 
       - f614ab23-5555-40e9-bf54-07f76125cf6f|0
       - 
-      flowUIDs: []
+      flowUIDs:
+      - 96b7b8a2-0330-49c2-9590-f87c3144d26b
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|d4792209-6ccf-4f33-be5b-bd0f3d8afb2a
@@ -528,7 +540,7 @@ MonoBehaviour:
       - 63b9941c-9e82-444a-bdcf-10f99604c229|0
       - 26124321-5785-465a-b4cc-be884648a2ac
       flowUIDs:
-      - c75ad8e7-282b-43e1-a6cb-d5c03491afd2
+      - 
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: 
@@ -582,13 +594,109 @@ MonoBehaviour:
       - 3974f567-b658-4ead-88ec-8b7800b298ac
       - 8a4ecc24-3f9e-43b3-b664-c05c82c514ad
       - e7211994-0351-45f2-8e0a-73a3019e4245
+      - c75ad8e7-282b-43e1-a6cb-d5c03491afd2
       nodeValues: []
     - fullName: UnityEngineDebug.__Log__SystemObject__SystemVoid
       uid: c75ad8e7-282b-43e1-a6cb-d5c03491afd2
-      position: {x: 1029.3975, y: 349.92108}
+      position: {x: 220.99489, y: 778.3089}
+      nodeUIDs:
+      - da5ca3a3-d940-4dc0-9f17-58887d20c7e0|0
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: Get_Variable
+      uid: da5ca3a3-d940-4dc0-9f17-58887d20c7e0
+      position: {x: -43.005127, y: 901.30884}
       nodeUIDs:
       - 
       flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|a54db3a3-7e23-4000-8453-ef55a3da19bf
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: UnityEngineDebug.__Log__SystemObject__SystemVoid
+      uid: 75a2b452-e769-4061-93c5-0b456b44ff54
+      position: {x: 1241.9681, y: -394.4066}
+      nodeUIDs:
+      - 3f2ffc58-67f4-4a5c-adf5-c224a8acc520|0
+      flowUIDs:
+      - 
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: Get_Variable
+      uid: 3f2ffc58-67f4-4a5c-adf5-c224a8acc520
+      position: {x: 1215.502, y: -242.99603}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|a54db3a3-7e23-4000-8453-ef55a3da19bf
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: UnityEngineDebug.__Log__SystemObject__SystemVoid
+      uid: eff2a9ea-8d33-4fb8-8c60-4e0f19570707
+      position: {x: 1235.2947, y: -161.17091}
+      nodeUIDs:
+      - 1b5fe769-9244-40b4-86ae-a50dafbf197e
+      flowUIDs:
+      - 
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: Get_Variable
+      uid: 1b5fe769-9244-40b4-86ae-a50dafbf197e
+      position: {x: 1209.2946, y: -10.1709585}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|4e746fe6-70c8-4cc6-bdb1-0eda9bce154b
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: UnityEngineDebug.__Log__SystemObject__SystemVoid
+      uid: 2a647d37-0a3a-4b18-8138-daf5b89f894b
+      position: {x: 1241.0237, y: 99.84494}
+      nodeUIDs:
+      - fe90d7ff-c9d8-48ff-bf1c-d20beafaaaf7
+      flowUIDs:
+      - 
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: Get_Variable
+      uid: fe90d7ff-c9d8-48ff-bf1c-d20beafaaaf7
+      position: {x: 1215.0238, y: 250.84494}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|4c9e0878-520d-4779-b554-c3367a302b17
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: Get_Variable
+      uid: 41ac576f-b4ca-42c4-9725-59ebc843ac0e
+      position: {x: 1223.741, y: 499.98953}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|d4792209-6ccf-4f33-be5b-bd0f3d8afb2a
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: UnityEngineDebug.__Log__SystemObject__SystemVoid
+      uid: 95b73780-74a1-40d8-baec-36de95c56e63
+      position: {x: 1249.741, y: 348.98953}
+      nodeUIDs:
+      - 41ac576f-b4ca-42c4-9725-59ebc843ac0e
+      flowUIDs:
+      - 
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: 
