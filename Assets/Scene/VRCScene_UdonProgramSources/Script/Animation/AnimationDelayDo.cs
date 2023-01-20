@@ -9,7 +9,7 @@ public class AnimationDelayDo : UdonSharpBehaviour
     private SyncEventAnimator syncAnimator;
     [HideInInspector]public bool goDelay;
     public float delayTime;
-    [HideInInspector]public float curTime;
+    public float curTime;
 
     private void Start()
     {
@@ -20,20 +20,28 @@ public class AnimationDelayDo : UdonSharpBehaviour
         {
             animationButton[i].Init();
         }
+
+
     }
 
     private void Update()
     {
         if (goDelay)
         {
-            delayTime += Time.deltaTime;
+            curTime += Time.deltaTime;
 
-            if(delayTime > curTime)
+            if(delayTime < curTime)
             {
-                Do();
+                if(syncAnimator.syncBool)
+                    Do();
             }
-        }
-           
+        }           
+    }
+
+    public void SetBool()
+    {
+        Debug.Log("changed");
+        goDelay = true;
     }
 
     void Do()

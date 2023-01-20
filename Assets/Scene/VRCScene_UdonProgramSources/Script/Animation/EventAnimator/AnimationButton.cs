@@ -48,7 +48,7 @@ public class AnimationButton : UdonSharpBehaviour
 
         if(delayDo != null)
         {
-            delayDo.goDelay = true;
+            delayDo.SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.All, "SetBool");
         }
     }
 

@@ -10,9 +10,10 @@ public class SyncEventAnimator : UdonSharpBehaviour
     [HideInInspector] public bool localBool;
 
     private Animator[] allAnimators;
-    private Animator checkAnimator;
+    [HideInInspector]public Animator checkAnimator;
 
     public float delayTime;
+    public bool onlyTrue;
     [HideInInspector] public float curControlTime;
 
 
@@ -40,7 +41,7 @@ public class SyncEventAnimator : UdonSharpBehaviour
 
         foreach (var item in allAnimators)
         {
-            if("BOOL" == item.GetParameter(0).name)
+            if ("BOOL" == item.GetParameter(0).name)
             {
                 checkAnimator = item;
                 break;
@@ -62,6 +63,10 @@ public class SyncEventAnimator : UdonSharpBehaviour
 
     void PlayAnimation()
     {
+        if (onlyTrue)
+            if (!syncBool)
+                return;
+
         for (int i = 0; i < allAnimators.Length; i++)
         {
             Animator diff = allAnimators[i];
@@ -79,5 +84,10 @@ public class SyncEventAnimator : UdonSharpBehaviour
         {
             PlayAnimation();
         }
+    }
+
+    public bool IsCheckAnimation()
+    {
+        return checkAnimator.GetBool("BOOL") != syncBool;
     }
 }
