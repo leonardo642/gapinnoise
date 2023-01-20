@@ -7,6 +7,7 @@ using VRC.Udon;
 public class SyncEventAnimator : UdonSharpBehaviour
 {
     [HideInInspector, UdonSynced] public bool syncBool;
+    [HideInInspector] public bool localBool;
 
     private Animator[] allAnimators;
     private Animator checkAnimator;
@@ -25,14 +26,6 @@ public class SyncEventAnimator : UdonSharpBehaviour
     private void Update()
     {
         curControlTime += Time.deltaTime;
-    }
-
-    private void LateUpdate()
-    {
-        if (checkAnimator.GetBool("BOOL") != syncBool && canControlTime < curControlTime)
-        {                
-            PlayAnimation();
-        }
     }
 
     private void Init()
@@ -59,19 +52,18 @@ public class SyncEventAnimator : UdonSharpBehaviour
 
     public void Play()
     {
-        Debug.Log("플레이!");
-        SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.All, "SyncTest");
+        SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.All, "SetSync");
+        
     }
 
-    public void SyncTest()
+    public void SetSync()
     {
-        Debug.Log("씽크 불 맞추기!!");
         syncBool = !syncBool;
+        PlayAnimation();
     }
 
     void PlayAnimation()
     {
-        Debug.Log("실행");
         for (int i = 0; i < allAnimators.Length; i++)
         {
             Animator diff = allAnimators[i];
@@ -81,5 +73,13 @@ public class SyncEventAnimator : UdonSharpBehaviour
         }
 
         curControlTime = 0;
+    }
+
+    public override void OnPlayerJoined(VRCPlayerApi player)
+    {
+        if (player.isLocal)
+        {
+            PlayAnimation();
+        }
     }
 }
