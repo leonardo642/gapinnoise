@@ -13,8 +13,6 @@ public class SyncEventAnimator : UdonSharpBehaviour
     private Animator checkAnimator;
 
     public float delayTime;
-
-    public float canControlTime;
     [HideInInspector] public float curControlTime;
 
 

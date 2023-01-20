@@ -11,8 +11,6 @@ public class EventAnimator : UdonSharpBehaviour
     private Animator[] allAnimators;
 
     public float delayTime;
-
-    public float canControlTime;
     [HideInInspector] public float curControlTime;
 
     private void Start()
