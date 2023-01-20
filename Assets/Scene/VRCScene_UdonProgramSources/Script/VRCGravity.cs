@@ -13,9 +13,13 @@ public class VRCGravity : UdonSharpBehaviour
 
     private void Start()
     {
-        Networking.LocalPlayer.SetJumpImpulse(jump);
-        Networking.LocalPlayer.SetWalkSpeed(walk);
-        Networking.LocalPlayer.SetRunSpeed(run);
-        Networking.LocalPlayer.SetStrafeSpeed(strafe);
+        if(Networking.LocalPlayer != null)
+        {
+            Networking.LocalPlayer.SetJumpImpulse(jump);
+            Networking.LocalPlayer.SetWalkSpeed(walk);
+            Networking.LocalPlayer.SetRunSpeed(run);
+            Networking.LocalPlayer.SetStrafeSpeed(strafe);
+        }
+        
     }
 }

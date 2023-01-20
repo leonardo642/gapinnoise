@@ -21,9 +21,6 @@ public class ObjectResetManager : UdonSharpBehaviour
     {
         VRC_Pickup[] pickups = (VRC_Pickup[])target.GetComponentsInChildren(typeof(VRC_Pickup));
 
-        Debug.Log(pickups.Length);
-
-
         gameobjects = new GameObject[pickups.Length];
         originalPositions = new Vector3[pickups.Length];
         quaternion = new Quaternion[pickups.Length];
