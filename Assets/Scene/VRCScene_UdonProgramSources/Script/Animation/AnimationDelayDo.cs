@@ -8,20 +8,12 @@ public class AnimationDelayDo : UdonSharpBehaviour
 {
     private SyncEventAnimator syncAnimator;
     [HideInInspector]public bool goDelay;
+    [HideInInspector] private float curTime;
     public float delayTime;
-    public float curTime;
 
     private void Start()
     {
         syncAnimator = GetComponent<SyncEventAnimator>();
-        AnimationButton[] animationButton = GetComponentsInChildren<AnimationButton>();
-
-        for (int i = 0; i < animationButton.Length; i++)
-        {
-            animationButton[i].Init();
-        }
-
-
     }
 
     private void Update()
@@ -30,23 +22,33 @@ public class AnimationDelayDo : UdonSharpBehaviour
         {
             curTime += Time.deltaTime;
 
-            if(delayTime < curTime)
+            if (delayTime < curTime)
             {
-                if(syncAnimator.syncBool)
+                if (syncAnimator.syncBool)
+                {
+                    //SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.Owner, "Do");
+                    //SendCustomEvent( "Do");
                     Do();
+                }
             }
-        }           
+        }             
     }
 
     public void SetBool()
     {
-        Debug.Log("changed");
+        if (goDelay)
+        {
+            curTime = 0;
+            return;
+        }
+        
+
         goDelay = true;
     }
 
     void Do()
     {
-        syncAnimator.SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.All, "SetSync");
+        syncAnimator.Play();
         goDelay = false;
         curTime = 0;
     }
