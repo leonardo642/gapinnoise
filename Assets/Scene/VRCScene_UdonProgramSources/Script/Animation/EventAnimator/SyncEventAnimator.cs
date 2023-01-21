@@ -32,14 +32,14 @@ public class SyncEventAnimator : UdonSharpBehaviour
 
     private void LateUpdate()
     {
-        if (Networking.LocalPlayer != null)
-        {
-            if (Networking.LocalPlayer.isLocal)
-            {
+        //if (Networking.LocalPlayer != null)
+        //{
+        //    if (Networking.LocalPlayer.isLocal)
+        //    {
                 if (localBool != syncBool)
                     PlayAnimation();
-            }
-        }
+        //    }
+        //}
     }
 
     private void Init()
