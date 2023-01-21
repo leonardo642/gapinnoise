@@ -42,7 +42,7 @@ public class SyncEventAnimator : UdonSharpBehaviour
 
         foreach (var item in allAnimators)
         {
-            if ("BOOL" == item.GetParameter(0).name)
+            if ("Bool" == item.GetParameter(0).type.ToString())
             {
                 checkAnimator = item;
                 break;
