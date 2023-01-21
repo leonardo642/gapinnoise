@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: 19 - Default
-  m_Shader: {fileID: 4800000, guid: 3fb94a39b2685ee4d9817dcaf6542d99, type: 3}
+  m_Shader: {fileID: 4800000, guid: a8d94439709469942bc7dcc9156ba110, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
@@ -337,11 +337,11 @@ Material:
     - _Bump2ndScale: 1
     - _BumpScale: 1
     - _ColorMask: 15
-    - _Cull: 2
+    - _Cull: 0
     - _Cutoff: 0.001
     - _DetailNormalMapScale: 1
     - _DissolveNoiseStrength: 0.1
-    - _DstBlend: 0
+    - _DstBlend: 1
     - _DstBlendAlpha: 10
     - _DstBlendAlphaFA: 1
     - _DstBlendFA: 1
@@ -363,6 +363,10 @@ Material:
     - _EmissionUseGrad: 0
     - _FlipNormal: 0
     - _GSAAStrength: 0.072
+    - _GemChromaticAberration: 0.02
+    - _GemEnvContrast: 2
+    - _GemParticleLoop: 8
+    - _GemVRParallaxStrength: 1
     - _GlitterAngleRandomize: 0
     - _GlitterApplyShape: 0
     - _GlitterApplyTransparency: 1
@@ -523,8 +527,8 @@ Material:
     - _ReflectionCubeOverride: 0
     - _ReflectionNormalStrength: 1
     - _RefractionColorFromMain: 0
-    - _RefractionFresnelPower: 0.5
-    - _RefractionStrength: 0.1
+    - _RefractionFresnelPower: 0.11
+    - _RefractionStrength: 0.31
     - _RimApplyTransparency: 1
     - _RimBackfaceMask: 1
     - _RimBlendMode: 1
@@ -613,7 +617,7 @@ Material:
     - _VertexLightStrength: 0
     - _ZClip: 1
     - _ZTest: 4
-    - _ZWrite: 1
+    - _ZWrite: 0
     - _e2gai: 2
     - _e2gci: 2
     - _egai: 2
@@ -649,6 +653,8 @@ Material:
     - _EmissionBlink: {r: 0, g: 0, b: 3.141593, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionMap_ScrollRotate: {r: 0, g: 0, b: 0, a: 0}
+    - _GemEnvColor: {r: 1, g: 1, b: 1, a: 1}
+    - _GemParticleColor: {r: 4, g: 4, b: 4, a: 1}
     - _GlitterAtras: {r: 1, g: 1, b: 0, a: 0}
     - _GlitterColor: {r: 1, g: 1, b: 1, a: 1}
     - _GlitterParams1: {r: 256, g: 256, b: 0.16, a: 50}

@@ -111,6 +111,22 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _FurLengthMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FurMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FurNoiseMask:
+        m_Texture: {fileID: 2800000, guid: 8a7dbcb2f4a32ec4297486403aee5f74, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FurVectorTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _GlitterColorTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -337,7 +353,7 @@ Material:
     - _Bump2ndScale: 1
     - _BumpScale: 1
     - _ColorMask: 15
-    - _Cull: 2
+    - _Cull: 0
     - _Cutoff: 0.001
     - _DetailNormalMapScale: 1
     - _DissolveNoiseStrength: 0.1
@@ -362,7 +378,47 @@ Material:
     - _EmissionParallaxDepth: 0
     - _EmissionUseGrad: 0
     - _FlipNormal: 0
+    - _FurAO: 0
+    - _FurAlphaToMask: 0
+    - _FurBlendOp: 0
+    - _FurBlendOpAlpha: 0
+    - _FurBlendOpAlphaFA: 4
+    - _FurBlendOpFA: 4
+    - _FurColorMask: 15
+    - _FurCull: 0
+    - _FurCutoutLength: 0.8
+    - _FurDstBlend: 10
+    - _FurDstBlendAlpha: 10
+    - _FurDstBlendAlphaFA: 1
+    - _FurDstBlendFA: 1
+    - _FurGravity: 0.25
+    - _FurLayerNum: 2
+    - _FurMeshType: 1
+    - _FurOffsetFactor: 0
+    - _FurOffsetUnits: 0
+    - _FurRandomize: 0
+    - _FurRootOffset: 0
+    - _FurSrcBlend: 5
+    - _FurSrcBlendAlpha: 1
+    - _FurSrcBlendAlphaFA: 0
+    - _FurSrcBlendFA: 1
+    - _FurStencilComp: 8
+    - _FurStencilFail: 0
+    - _FurStencilPass: 0
+    - _FurStencilReadMask: 255
+    - _FurStencilRef: 0
+    - _FurStencilWriteMask: 255
+    - _FurStencilZFail: 0
+    - _FurTouchStrength: 0
+    - _FurVectorScale: 1
+    - _FurZClip: 1
+    - _FurZTest: 4
+    - _FurZWrite: 0
     - _GSAAStrength: 0
+    - _GemChromaticAberration: 0.02
+    - _GemEnvContrast: 2
+    - _GemParticleLoop: 8
+    - _GemVRParallaxStrength: 1
     - _GlitterAngleRandomize: 0
     - _GlitterApplyShape: 0
     - _GlitterApplyTransparency: 1
@@ -610,6 +666,7 @@ Material:
     - _UseReflection: 1
     - _UseRim: 0
     - _UseShadow: 0
+    - _VertexColor2FurVector: 0
     - _VertexLightStrength: 0
     - _ZClip: 1
     - _ZTest: 4
@@ -649,6 +706,9 @@ Material:
     - _EmissionBlink: {r: 0, g: 0, b: 3.141593, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _EmissionMap_ScrollRotate: {r: 0, g: 0, b: 0, a: 0}
+    - _FurVector: {r: 0, g: 0, b: 1, a: 0.02}
+    - _GemEnvColor: {r: 1, g: 1, b: 1, a: 1}
+    - _GemParticleColor: {r: 4, g: 4, b: 4, a: 1}
     - _GlitterAtras: {r: 1, g: 1, b: 0, a: 0}
     - _GlitterColor: {r: 1, g: 1, b: 1, a: 1}
     - _GlitterParams1: {r: 256, g: 256, b: 0.16, a: 50}
