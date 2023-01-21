@@ -28,7 +28,13 @@ public class AnimationButton : UdonSharpBehaviour
 
     void Do()
     {
-        
+        if (delayDo != null)
+        {
+            if (syncEventAni.syncBool)
+                return;
+
+            delayDo.SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.Owner, "SetBool");
+        }
 
         if (eventAni != null)
         {
@@ -46,22 +52,19 @@ public class AnimationButton : UdonSharpBehaviour
             syncEventAni.Play();
         }
 
-        if(delayDo != null)
-        {
-            delayDo.SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.All, "SetBool");
-        }
+        
     }
 
     public void OnMouseDown()
     {
-        Do();
+       //Do();
     }
 
     bool CanControl()
     {
         bool rtnValue = false;
         if (eventAni != null) rtnValue = eventAni.delayTime < eventAni.curControlTime;
-        if(syncEventAni != null) rtnValue = syncEventAni.delayTime < syncEventAni.curControlTime;
+        if(syncEventAni != null) rtnValue = syncEventAni.CanControl();
         return rtnValue;
     }
 }

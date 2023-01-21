@@ -6,6 +6,7 @@ using VRC.Udon;
 
 public class EventAnimator : UdonSharpBehaviour
 {
+    public string openName;
     [HideInInspector] public bool doBool;
 
     private Animator[] allAnimators;
@@ -49,8 +50,8 @@ public class EventAnimator : UdonSharpBehaviour
         {
             Animator diff = allAnimators[i];
 
-            if ("BOOL" == diff.GetParameter(0).name) diff.SetBool("BOOL", doBool);
-            else if ("TRIGGER" == diff.GetParameter(0).name) diff.SetTrigger("TRIGGER");
+            if ("Bool" == diff.GetParameter(0).type.ToString()) diff.SetBool(openName, doBool);
+            else if ("Trigger" == diff.GetParameter(0).ToString()) diff.SetTrigger(openName);
         }
 
         curControlTime = 0;

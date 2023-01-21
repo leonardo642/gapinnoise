@@ -8,14 +8,13 @@ public class SyncEventAnimator : UdonSharpBehaviour
 {
     public string playAnimation;
     [HideInInspector, UdonSynced] public bool syncBool;
-    [HideInInspector] public bool localBool;
+    [HideInInspector]public bool localBool;
 
     private Animator[] allAnimators;
     [HideInInspector]public Animator checkAnimator;
 
     public float delayTime;
-    public bool onlyTrue;
-    [HideInInspector] public float curControlTime;
+    [HideInInspector, UdonSynced] public float curControlTime;
 
 
     private void Start()
@@ -25,7 +24,22 @@ public class SyncEventAnimator : UdonSharpBehaviour
 
     private void Update()
     {
-        curControlTime += Time.deltaTime;
+        curControlTime += Time.deltaTime; 
+
+        
+        
+    }
+
+    private void LateUpdate()
+    {
+        if (Networking.LocalPlayer != null)
+        {
+            if (Networking.LocalPlayer.isLocal)
+            {
+                if (localBool != syncBool)
+                    PlayAnimation();
+            }
+        }
     }
 
     private void Init()
@@ -52,43 +66,33 @@ public class SyncEventAnimator : UdonSharpBehaviour
 
     public void Play()
     {
-        SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.All, "SetSync");
-        
+        SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.All, "SetSync");        
     }
 
     public void SetSync()
     {
+        localBool = !localBool;
         syncBool = !syncBool;
         PlayAnimation();
     }
 
     void PlayAnimation()
     {
-        if (onlyTrue)
-            if (!syncBool)
-                return;
 
         for (int i = 0; i < allAnimators.Length; i++)
         {
             Animator diff = allAnimators[i];
 
-            if ("Bool" == diff.GetParameter(0).type.ToString()) diff.SetBool(playAnimation , syncBool);
+            if ("Bool" == diff.GetParameter(0).type.ToString()) diff.SetBool(playAnimation , localBool);
             else if ("Trigger" == diff.GetParameter(0).type.ToString()) diff.SetTrigger(playAnimation);
         }
 
         curControlTime = 0;
     }
 
-    public override void OnPlayerJoined(VRCPlayerApi player)
+    public bool CanControl()
     {
-        if (player.isLocal)
-        {
-            PlayAnimation();
-        }
+        return delayTime < curControlTime;
     }
 
-    public bool IsCheckAnimation()
-    {
-        return checkAnimator.GetBool("BOOL") != syncBool;
-    }
 }
