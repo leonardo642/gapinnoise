@@ -54,7 +54,7 @@ public class AnimationButton : UdonSharpBehaviour
 
     public void OnMouseDown()
     {
-        //Do();
+        Do();
     }
 
     bool CanControl()

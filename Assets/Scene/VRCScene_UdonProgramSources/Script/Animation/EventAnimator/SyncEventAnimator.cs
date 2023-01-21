@@ -6,6 +6,7 @@ using VRC.Udon;
 
 public class SyncEventAnimator : UdonSharpBehaviour
 {
+    public string playAnimation;
     [HideInInspector, UdonSynced] public bool syncBool;
     [HideInInspector] public bool localBool;
 
@@ -71,8 +72,8 @@ public class SyncEventAnimator : UdonSharpBehaviour
         {
             Animator diff = allAnimators[i];
 
-            if ("BOOL" == diff.GetParameter(0).name) diff.SetBool("BOOL", syncBool);
-            else if ("TRIGGER" == diff.GetParameter(0).name) diff.SetTrigger("TRIGGER");
+            if ("Bool" == diff.GetParameter(0).type.ToString()) diff.SetBool(playAnimation , syncBool);
+            else if ("Trigger" == diff.GetParameter(0).type.ToString()) diff.SetTrigger(playAnimation);
         }
 
         curControlTime = 0;
