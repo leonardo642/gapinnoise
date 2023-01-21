@@ -16,7 +16,7 @@ public class Gravity : UdonSharpBehaviour
 
     private void Start()
     {
-        GameObject vrcWorld = GameObject.Find("VRCWorld");
+        GameObject vrcWorld = GameObject.Find("GravitySetting");
         udon = vrcWorld.GetComponent<VRCGravity>();
         
     }
