@@ -29,7 +29,7 @@ MonoBehaviour:
     nodes:
     - fullName: Get_Variable
       uid: c85bd08b-bd8c-4d10-bbaf-8fe37b8e67ed
-      position: {x: -330, y: -40}
+      position: {x: -330, y: -43}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -38,7 +38,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|7a85105f-7376-4887-94df-dcdb90ba02f6
     - fullName: Variable_VRCUdonCommonInterfacesIUdonEventReceiver
       uid: 7a85105f-7376-4887-94df-dcdb90ba02f6
-      position: {x: -12, y: -600}
+      position: {x: 528, y: -420}
       nodeUIDs:
       - 
       - 
@@ -70,7 +70,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|8dab0ccc-4f54-4719-973d-0c42ca4cf7f2
     - fullName: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
       uid: ce8d78a0-2f92-44e6-a87d-fa989465c978
-      position: {x: 60, y: -60}
+      position: {x: 67, y: -83}
       nodeUIDs:
       - c85bd08b-bd8c-4d10-bbaf-8fe37b8e67ed|0
       - c0389565-9622-4b61-9391-395ec701d61b|0
@@ -83,7 +83,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Variable_SystemString
       uid: 8dab0ccc-4f54-4719-973d-0c42ca4cf7f2
-      position: {x: -228, y: -600}
+      position: {x: 312, y: -420}
       nodeUIDs:
       - 
       - 
@@ -123,5 +123,9 @@ MonoBehaviour:
   - type: 4
     uid: 4b97c479-d8be-4671-b5c8-cae6434c1adf
     jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":10.0,"y":20.0,"width":0.0,"height":0.0}}'
+  - type: 2
+    uid: 93b70c85-1541-4c1b-8d13-31cf0ad812f4
+    jsonData: '{"uid":"93b70c85-1541-4c1b-8d13-31cf0ad812f4","layout":{"serializedVersion":"2","x":-355.0,"y":-187.0,"width":841.0,"height":335.0},"containedElements":["ee611c19-6e9f-4006-a819-d16994e1f506","ce8d78a0-2f92-44e6-a87d-fa989465c978","c0389565-9622-4b61-9391-395ec701d61b","c85bd08b-bd8c-4d10-bbaf-8fe37b8e67ed"],"title":"Send
+      an event to the target when the Mouse is clicked on this object","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
   version: 1.0.0
   showAssembly: 0

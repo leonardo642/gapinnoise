@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: bo li zhao
-  m_Shader: {fileID: 4800000, guid: dce3f3e248acc7b4daeda00daf616b4d, type: 3}
+  m_Shader: {fileID: 4800000, guid: 165365ab7100a044ca85fc8c33548a62, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -357,7 +357,7 @@ Material:
     - _Cutoff: 0.001
     - _DetailNormalMapScale: 1
     - _DissolveNoiseStrength: 0.1
-    - _DstBlend: 0
+    - _DstBlend: 10
     - _DstBlendAlpha: 10
     - _DstBlendAlphaFA: 1
     - _DstBlendFA: 1
@@ -572,7 +572,7 @@ Material:
     - _PreZClip: 1
     - _PreZTest: 4
     - _PreZWrite: 1
-    - _Reflectance: 0.621
+    - _Reflectance: 1
     - _ReflectionApplyTransparency: 1
     - _ReflectionBlendMode: 1
     - _ReflectionCubeEnableLighting: 1
@@ -622,7 +622,7 @@ Material:
     - _ShadowStrength: 1
     - _ShadowStrengthMaskLOD: 0
     - _ShiftBackfaceUV: 0
-    - _Smoothness: 1
+    - _Smoothness: 0.631
     - _SmoothnessTextureChannel: 0
     - _SpecularBlur: 0
     - _SpecularBorder: 0.5
@@ -665,7 +665,7 @@ Material:
     - _UseParallax: 0
     - _UseReflection: 1
     - _UseRim: 0
-    - _UseShadow: 0
+    - _UseShadow: 1
     - _VertexColor2FurVector: 0
     - _VertexLightStrength: 0
     - _ZClip: 1
@@ -688,8 +688,8 @@ Material:
     - _AudioLinkVertexUVParams: {r: 0.25, g: 0, b: 0, a: 0.125}
     - _BackfaceColor: {r: 0, g: 0, b: 0, a: 0}
     - _BacklightColor: {r: 0.85, g: 0.8, b: 0.7, a: 1}
-    - _BaseColor: {r: 1, g: 1, b: 1, a: 0.07058824}
-    - _Color: {r: 1, g: 1, b: 1, a: 0.07058824}
+    - _BaseColor: {r: 0.26112494, g: 0.33962262, b: 0.33661088, a: 0.12156863}
+    - _Color: {r: 0.26112494, g: 0.33962262, b: 0.33661088, a: 0.12156863}
     - _Color2nd: {r: 1, g: 1, b: 1, a: 1}
     - _Color3rd: {r: 1, g: 1, b: 1, a: 1}
     - _DissolveColor: {r: 1, g: 1, b: 1, a: 1}
@@ -747,12 +747,12 @@ Material:
     - _RefractionColor: {r: 1, g: 1, b: 1, a: 1}
     - _RimColor: {r: 0.65999997, g: 0.5, b: 0.47999996, a: 1}
     - _RimIndirColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Shadow2ndColor: {r: 0.68, g: 0.65999997, b: 0.78999996, a: 1}
+    - _Shadow2ndColor: {r: 0, g: 0, b: 0, a: 1}
     - _Shadow3rdColor: {r: 0, g: 0, b: 0, a: 0}
     - _ShadowAOShift: {r: 1, g: 0, b: 1, a: 0}
     - _ShadowAOShift2: {r: 1, g: 0, b: 1, a: 0}
-    - _ShadowBorderColor: {r: 1, g: 0.09999997, b: 0, a: 1}
-    - _ShadowColor: {r: 0.82, g: 0.76, b: 0.85, a: 1}
+    - _ShadowBorderColor: {r: 1, g: 1, b: 1, a: 1}
+    - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _e2ga0: {r: 1, g: 0, b: 0, a: 0}
     - _e2ga1: {r: 1, g: 0, b: 0, a: 1}
     - _e2ga2: {r: 1, g: 0, b: 0, a: 0}
