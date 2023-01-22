@@ -36,9 +36,9 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _FarClip: 10
-    - _LightDecay: 3
-    - _NearClip: 0.8
+    - _FarClip: 212.72
+    - _LightDecay: 2
+    - _NearClip: 22.6
     - _NoiseValue: 0
     - _VolumeSize: 10
     - test: 0

@@ -12,7 +12,7 @@ Material:
   m_ShaderKeywords: SMOKE ZCORRECT
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
-  m_DoubleSidedGI: 1
+  m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
@@ -33,19 +33,19 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _CubeScale: 10
-    - _Intensity: 0.29
+    - _Intensity: 0.122
     - _Iteration: 200
-    - _LoopLimit: 215.9
+    - _LoopLimit: 300
     - _NoiseDensity: 1
     - _NoiseScale: 4
     - _SMOKE: 1
-    - _Step: 163
+    - _Step: 100
     - _ZCORRECT: 1
     - _Zoffset: 0
     m_Colors:
     - _Color: {r: 0, g: 0.827451, b: 1, a: 1}
     - _Color1: {r: 0, g: 1, b: 0.6500001, a: 1}
     - _Color2: {r: 0.18039213, g: 0.19163412, b: 0.85490197, a: 1}
-    - _NoiseScroll: {r: 0, g: -0.05, b: 0, a: 0}
+    - _NoiseScroll: {r: 0, g: -0.02, b: 0, a: 0}
     - _Offset: {r: 30, g: 0.05, b: -15, a: 1}
     - _Zoffset: {r: 50, g: -30, b: 50, a: 1}

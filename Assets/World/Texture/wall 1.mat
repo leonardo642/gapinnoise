@@ -380,7 +380,7 @@ Material:
     - _EmissionParallaxDepth: 0
     - _EmissionUseGrad: 0
     - _EnvironmentReflections: 1
-    - _FlipNormal: 0
+    - _FlipNormal: 1
     - _GSAAStrength: 0.152
     - _GlitterAngleRandomize: 0
     - _GlitterApplyShape: 0

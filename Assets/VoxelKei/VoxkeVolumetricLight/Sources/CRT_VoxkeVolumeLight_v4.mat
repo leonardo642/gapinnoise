@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: CRT_VoxkeVolumeLight_v4
   m_Shader: {fileID: 4800000, guid: 7b0643c6da42ff54284bafb16f098ade, type: 3}
-  m_ShaderKeywords: 
+  m_ShaderKeywords: ZCORRECT
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -31,15 +31,32 @@ Material:
         m_Texture: {fileID: 8400000, guid: bf9c251cfed90164dbaa5c8c7e085ea7, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Noise3D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _NoiseTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Volume:
+        m_Texture: {fileID: 8600000, guid: 109e861edcf4af74d8b9369b40e72738, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _FarClip: 820.31
-    - _LightDecay: 2.5
-    - _NearClip: 15.4
+    - _FarClip: 16.96
+    - _Intensity: 0.1
+    - _LightDecay: 3
+    - _LoopLimit: 200
+    - _NearClip: 0.2
+    - _NoiseDensity: 1
+    - _NoiseScale: 10
     - _NoiseValue: 0
+    - _SMOKE: 0
+    - _Step: 200
     - _VolumeSize: 10
+    - _ZCORRECT: 1
     - test: 0
-    m_Colors: []
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _NoiseScroll: {r: 0, g: 0, b: 0, a: 0}
