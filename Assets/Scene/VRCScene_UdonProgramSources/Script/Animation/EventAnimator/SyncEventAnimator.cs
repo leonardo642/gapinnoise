@@ -7,14 +7,13 @@ using VRC.Udon;
 public class SyncEventAnimator : UdonSharpBehaviour
 {
     public string playAnimation;
-    [HideInInspector, UdonSynced] public bool syncBool;
-    [HideInInspector]public bool localBool;
+    [HideInInspector, UdonSynced] public bool State;
 
     private Animator[] allAnimators;
     [HideInInspector]public Animator checkAnimator;
 
     public float delayTime;
-    [HideInInspector, UdonSynced] public float curControlTime;
+    [HideInInspector] public float curControlTime;
 
 
     private void Start()
@@ -24,22 +23,7 @@ public class SyncEventAnimator : UdonSharpBehaviour
 
     private void Update()
     {
-        curControlTime += Time.deltaTime; 
-
-        
-        
-    }
-
-    private void LateUpdate()
-    {
-        //if (Networking.LocalPlayer != null)
-        //{
-        //    if (Networking.LocalPlayer.isLocal)
-        //    {
-                if (localBool != syncBool)
-                    PlayAnimation();
-        //    }
-        //}
+        curControlTime += Time.deltaTime;      
     }
 
     private void Init()
@@ -66,28 +50,33 @@ public class SyncEventAnimator : UdonSharpBehaviour
 
     public void Play()
     {
-        SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.All, "SetSync");        
-    }
-
-    public void SetSync()
-    {
-        localBool = !localBool;
-        syncBool = !syncBool;
+        Networking.SetOwner(Networking.LocalPlayer, gameObject);
+        State = !State;
+        RequestSerialization();
         PlayAnimation();
     }
 
     void PlayAnimation()
-    {
+    {        
 
         for (int i = 0; i < allAnimators.Length; i++)
         {
             Animator diff = allAnimators[i];
 
-            if ("Bool" == diff.GetParameter(0).type.ToString()) diff.SetBool(playAnimation , localBool);
+            if ("Bool" == diff.GetParameter(0).type.ToString()) diff.SetBool(playAnimation , State);
             else if ("Trigger" == diff.GetParameter(0).type.ToString()) diff.SetTrigger(playAnimation);
         }
 
         curControlTime = 0;
+    }
+
+    public override void OnDeserialization()
+    {
+        if(checkAnimator.GetBool(playAnimation) != State)
+        {
+            PlayAnimation();
+        }
+            
     }
 
     public bool CanControl()

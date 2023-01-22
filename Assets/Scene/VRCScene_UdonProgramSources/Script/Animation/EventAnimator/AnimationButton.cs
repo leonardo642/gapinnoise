@@ -30,7 +30,7 @@ public class AnimationButton : UdonSharpBehaviour
     {
         if (delayDo != null)
         {
-            if (syncEventAni.syncBool)
+            if (syncEventAni.State)
                 return;
 
             delayDo.SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.Owner, "SetBool");

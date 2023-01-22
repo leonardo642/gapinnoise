@@ -24,10 +24,8 @@ public class AnimationDelayDo : UdonSharpBehaviour
 
             if (delayTime < curTime)
             {
-                if (syncAnimator.syncBool)
+                if (syncAnimator.State)
                 {
-                    //SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.Owner, "Do");
-                    //SendCustomEvent( "Do");
                     Do();
                 }
             }
