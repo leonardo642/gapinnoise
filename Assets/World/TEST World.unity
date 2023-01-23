@@ -20453,6 +20453,23 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2012129752}
     m_Modifications:
+    - target: {fileID: 952877493, guid: 208aa5a3a06448b4fa10e06335547c89, type: 3}
+      propertyPath: m_Size.x
+      value: 39.684
+      objectReference: {fileID: 0}
+    - target: {fileID: 952877493, guid: 208aa5a3a06448b4fa10e06335547c89, type: 3}
+      propertyPath: m_Center.x
+      value: 17.409689
+      objectReference: {fileID: 0}
+    - target: {fileID: 952877493, guid: 208aa5a3a06448b4fa10e06335547c89, type: 3}
+      propertyPath: m_Center.z
+      value: -0.045969754
+      objectReference: {fileID: 0}
+    - target: {fileID: 952877494, guid: 208aa5a3a06448b4fa10e06335547c89, type: 3}
+      propertyPath: serializedProgramAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 6df5de349cf131d409ea488222a9420b,
+        type: 2}
     - target: {fileID: 1191153478333178571, guid: 208aa5a3a06448b4fa10e06335547c89,
         type: 3}
       propertyPath: m_Name
@@ -20462,21 +20479,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 2002979694914664561, guid: 208aa5a3a06448b4fa10e06335547c89,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.29999998
-      objectReference: {fileID: 0}
-    - target: {fileID: 2002979694914664561, guid: 208aa5a3a06448b4fa10e06335547c89,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.29999998
-      objectReference: {fileID: 0}
-    - target: {fileID: 2002979694914664561, guid: 208aa5a3a06448b4fa10e06335547c89,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.29999998
       objectReference: {fileID: 0}
     - target: {fileID: 2002979694914664561, guid: 208aa5a3a06448b4fa10e06335547c89,
         type: 3}
@@ -74898,19 +74900,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1933427930}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1952319111
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1952319106}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 229740497, guid: 4ecd63eff847044b68db9453ce219299, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  contentType: 1
 --- !u!1 &1952346789
 GameObject:
   m_ObjectHideFlags: 0
