@@ -59,7 +59,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Get_Variable
       uid: 79ec965e-74e5-4d92-b02f-dc0e80f1d058
-      position: {x: 634.0001, y: -201.15}
+      position: {x: 644.86957, y: -191.17387}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -111,7 +111,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Block
       uid: 97b628d1-c425-47e7-a308-aad5b1c5df17
-      position: {x: 1001.3913, y: -228.91304}
+      position: {x: 1015, y: -263}
       nodeUIDs: []
       flowUIDs:
       - e39ad769-0aee-431b-83c3-9c752fb2e51e

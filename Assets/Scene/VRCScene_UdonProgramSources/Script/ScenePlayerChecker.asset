@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c333ccfdd0cbdbc4ca30cef2dd6e6b9b, type: 3}
   m_Name: ScenePlayerChecker
   m_EditorClassIdentifier: 
-  serializedUdonProgramAsset: {fileID: 11400000, guid: 7abe716300a386146a2c75b50e9390f5,
+  serializedUdonProgramAsset: {fileID: 11400000, guid: 0115067696716e640b8313ec3b9be727,
     type: 2}
   udonAssembly: 
   assemblyError: 
