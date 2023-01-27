@@ -8,8 +8,15 @@ public class FerrisChair : UdonSharpBehaviour
 {
     public int curNode;
 
-    private void Start()
+    //private void Update()
+    //{
+    //    //if (Input.GetKeyDown(KeyCode.W)){
+    //    //    //OnStationExited(Networking.LocalPlayer);
+    //    //}
+    //}
+
+    public override void Interact()
     {
-        Debug.Log("hello");
+        Networking.LocalPlayer.UseAttachedStation();
     }
 }

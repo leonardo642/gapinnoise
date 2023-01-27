@@ -49,6 +49,7 @@ public class FerrisWheel : UdonSharpBehaviour
             Vector3 distance = nodes[next].position - chooseChair.transform.position;
 
             chooseChair.transform.position += distance.normalized * speed * Time.fixedDeltaTime;
+            chooseChair.transform.LookAt(nodes[next].transform);
             if (distance.sqrMagnitude < 0.1f)
             {
                 chooseChair.curNode = next;
